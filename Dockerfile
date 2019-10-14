@@ -1,7 +1,7 @@
 FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu16.04
 
-ARG PYTHON_VERSION=3.6
-ARG TORCH_VERSION=v1.2.0
+ARG PYTHON_VERSION=3.7
+ARG TORCH_VERSION=v1.3.0
 ARG TORCHVISION_VERSION=v0.4.0
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
