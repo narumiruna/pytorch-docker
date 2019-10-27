@@ -1,4 +1,5 @@
-FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu16.04
+ARG BASE_IMAGE=nvidia/cuda:10.0-cudnn7-devel-ubuntu16.04
+FROM $BASE_IMAGE
 
 ARG PYTHON_VERSION=3.7
 ARG TORCH_VERSION=v1.3.0
